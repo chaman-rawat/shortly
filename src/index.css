@@ -29,6 +29,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+li {
+  list-style: none;
+}
+
 @media (min-width: 600px) {
   :root {
     /* Body Copy */
