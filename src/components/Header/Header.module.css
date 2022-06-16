@@ -1,0 +1,49 @@
+.header {
+  background: #0001;
+  padding-block: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.header .row {
+  flex-direction: row;
+}
+
+.header__hamburger {
+  width: 35px;
+  height: 30px;
+  box-shadow: 0 5px inset var(--clr-grayish-violet),
+    0 -5px inset var(--clr-grayish-violet), 0 -12.5px inset #fff,
+    0 -17.5px inset var(--clr-grayish-violet);
+  float: right;
+}
+
+.header__logo {
+  width: 35%;
+}
+
+.header__nav {
+  height: 10rem;
+  background-color: var(--clr-dark-violet);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .hidden {
+    display: unset;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__nav {
+    height: 10rem;
+    background-color: unset;
+    color: var(--clr-grayish-violet);
+  }
+}
