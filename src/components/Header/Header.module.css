@@ -60,7 +60,7 @@
 
 @media (min-width: 900px) {
   .header__logo {
-    width: calc(4rem + 7vw);
+    width: calc(3.5rem + 7vw);
     margin-inline-end: 1.5rem;
   }
 
@@ -83,11 +83,11 @@
 
   .nav__list,
   .btn {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .nav__list {
-    gap: 2rem;
+    gap: 1.5rem;
     margin-block: 0;
   }
 
