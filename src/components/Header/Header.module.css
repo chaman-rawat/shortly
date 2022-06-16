@@ -1,5 +1,5 @@
 .header {
-  padding-block-start: 2rem;
+  padding-block-start: 2.5rem;
 }
 
 .header__icons {
@@ -14,11 +14,11 @@
 }
 
 .header__hamburger {
-  width: 35px;
-  height: 30px;
-  box-shadow: 0 4px inset var(--clr-grayish-violet),
-    0 -4px inset var(--clr-grayish-violet), 0 -12.5px inset #fff,
-    0 -16.5px inset var(--clr-grayish-violet);
+  width: 28px;
+  height: 22px;
+  box-shadow: 0 3px inset var(--clr-grayish-violet),
+    0 -3px inset var(--clr-grayish-violet), 0 -9.5px inset #fff,
+    0 -12.5px inset var(--clr-grayish-violet);
   float: right;
 }
 
@@ -60,7 +60,7 @@
 
 @media (min-width: 900px) {
   .header__logo {
-    width: calc(6rem + 10vw);
+    width: calc(4rem + 7vw);
     margin-inline-end: 1.5rem;
   }
 
