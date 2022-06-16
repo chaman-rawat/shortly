@@ -1,10 +1,11 @@
 import Button from "../UI/Button";
+import classes from "./Shorten.module.css";
 
-const ShortenIt = () => {
+const Shorten = () => {
   return (
     <section>
       <div className="container center">
-        <form action="">
+        <form action="" className={classes.shorten}>
           <input id="search" type="text" />
           <Button>Shorten It!</Button>
         </form>
@@ -13,4 +14,4 @@ const ShortenIt = () => {
   );
 };
 
-export default ShortenIt;
+export default Shorten;

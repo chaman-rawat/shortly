@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import ShortenIt from "./ShortenIt";
+import Shorten from "./Shorten";
 import Statistics from "./Statistics";
 import GetStarted from "./GetStarted";
 
@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main>
       <Hero />
-      <ShortenIt />
+      <Shorten />
       <Statistics />
       <GetStarted />
     </main>
