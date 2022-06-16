@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 *,
 *::after,
 *::before {
@@ -19,21 +20,28 @@
   --clr-very-dark-violet: hsl(260, 8%, 14%);
 
   /* Body Copy */
-  --font-size: 16px;
+  font-size: 16px;
 
   /* Fonts */
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
   --font-family: "Poppins", sans-serif;
-
   --min-width: 600px;
 }
 
 body {
   margin: 0;
-  font-size: var(--font-size);
   font-family: var(--font-family);
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+li {
+  font-size: 1.125rem;
+}
+
+button {
+  font-size: 1.25rem;
 }
 
 li {
@@ -42,12 +50,7 @@ li {
 
 .container {
   margin-inline: auto;
-  width: 90%;
-}
-
-img {
-  max-width: 100%;
-  overflow: hidden;
+  width: 88%;
 }
 
 ul {
@@ -65,8 +68,11 @@ ul {
 
 @media (min-width: 900px) {
   :root {
-    /* Body Copy */
-    --font-size: 18px;
+    font-size: 18px;
+  }
+
+  body {
+    text-align: unset;
   }
 
   .container {
