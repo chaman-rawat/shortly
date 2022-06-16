@@ -63,7 +63,7 @@ ul {
   text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   :root {
     /* Body Copy */
     --font-size: 18px;
@@ -72,10 +72,12 @@ ul {
   .container {
     margin-inline: auto;
     width: 80%;
+    max-width: 1500px;
   }
 
   .row {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
