@@ -3,10 +3,11 @@ import facebook from "../../images/icon-facebook.svg";
 import instagram from "../../images/icon-instagram.svg";
 import pinterest from "../../images/icon-pinterest.svg";
 import twitter from "../../images/icon-twitter.svg";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={classes.footer}>
       <div className="container row">
         <img src={logo} alt="Shortly" />
         <div className="row">

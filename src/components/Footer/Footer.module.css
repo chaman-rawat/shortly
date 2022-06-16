@@ -1,0 +1,9 @@
+.footer {
+    background-color:  var(--clr-very-dark-violet);
+    color: var(--clr-gray);
+    text-align: center;
+}
+
+.footer h3 {
+    color: white;
+}
