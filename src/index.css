@@ -75,6 +75,11 @@ ul {
     text-align: unset;
   }
 
+  p,
+  li {
+    font-size: 1rem;
+  }
+
   .container {
     margin-inline: auto;
     width: 80%;
