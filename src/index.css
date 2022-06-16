@@ -24,6 +24,8 @@
   /* Fonts */
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
   --font-family: "Poppins", sans-serif;
+
+  --min-width: 600px;
 }
 
 body {
@@ -40,12 +42,21 @@ li {
 
 .container {
   margin-inline: auto;
-  width: 80%;
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  padding-inline-start: 0rem;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .center {
@@ -56,5 +67,15 @@ li {
   :root {
     /* Body Copy */
     --font-size: 18px;
+  }
+
+  .container {
+    margin-inline: auto;
+    width: 80%;
+  }
+
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
