@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container row">
         <div className={classes.hero__img} />
 
-        <div>
+        <div className={classes.hero__text} >
           <h1 className={classes.hero__title}>More than just shorter links</h1>
           <p className={classes.hero__desc}>
             Build your brand’s recognition and get detailed insights on how your

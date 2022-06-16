@@ -9,7 +9,7 @@
 
 .hero__title {
   font-size: 2.2rem;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: -1px;
   color: var(--clr-very-dark-blue);
   margin-block-end: 1rem;
@@ -22,18 +22,27 @@
 @media (min-width: 900px) {
   .hero > div {
     flex-direction: row-reverse;
+    width: 90%;
+    transform: translateX(5.5%);
+    /* gap: 3rem; */
   }
 
   .hero__img {
-    background-image: url("../../images/illustration-working.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: calc(100% + 12%);
-    aspect-ratio: 523 / 482;
+    width: clamp(20rem, 45%, 40rem);
+    min-width: 20rem;
+    aspect-ratio: 573 / 482;
+    margin-block-end: 0;
+  }
+
+  .hero__text {
+    width: 50%;
   }
 
   .hero__title {
-    font-size: 5rem;
+    font-size: min(6vw, 5rem);
   }
 
+  .hero__desc {
+    font-size: min(2.25vw, 1.4rem);
+  }
 }
