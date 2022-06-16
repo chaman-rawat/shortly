@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import Shorten from "./Shorten";
 import Statistics from "./Statistics";
-import GetStarted from "./GetStarted";
+import Boost from "./Boost";
 import classes from "./Main.module.css";
 
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
       <Hero />
       <Shorten />
       <Statistics />
-      <GetStarted />
+      <Boost />
     </main>
   );
 };

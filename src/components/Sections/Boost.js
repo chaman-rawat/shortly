@@ -1,6 +1,6 @@
 import Button from "../UI/Button";
 
-const GetStarted = () => {
+const Boost = () => {
   return (
     <section>
       <div className="container center">
@@ -11,4 +11,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default Boost;
