@@ -38,11 +38,12 @@
   .shorten__search,
   .shorten__btn {
     font-size: 1.25rem;
+    border-radius: 10px;
     height: 50%;
   }
 
   .shorten__search {
-    width: 65%;
+    width: 70%;
   }
 
   .shorten__btn {
