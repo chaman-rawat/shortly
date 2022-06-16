@@ -7,9 +7,9 @@ import twitter from "../../images/icon-twitter.svg";
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className="container row">
         <img src={logo} alt="Shortly" />
-        <div>
+        <div className="row">
           <div>
             <h3>Features</h3>
             <ul>
@@ -36,19 +36,19 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <a href="">
+        <div className="row">
+          {/* <a href=""> */}
             <img src={facebook} alt="Facebook" />
-          </a>
-          <a href="">
+          {/* </a> */}
+          {/* <a href=""> */}
             <img src={twitter} alt="Twitter" />
-          </a>
-          <a href="">
+          {/* </a> */}
+          {/* <a href=""> */}
             <img src={pinterest} alt="Pinterest" />
-          </a>
-          <a href="">
+          {/* </a> */}
+          {/* <a href=""> */}
             <img src={instagram} alt="Instagram" />
-          </a>
+          {/* </a> */}
         </div>
       </div>
     </footer>
