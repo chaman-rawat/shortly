@@ -1,3 +1,54 @@
 .shorten {
-    background: url(../../images/bg-shorten-desktop.svg);
+}
+
+.shorten__form {
+  background-image: url(../../images/bg-shorten-mobile.svg);
+  background-color: var(--clr-dark-violet);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.shorten__search,
+.shorten__btn {
+  height: 3rem;
+  width: 100%;
+}
+
+.shorten__search {
+  margin-bottom: 1rem;
+}
+
+.shorten__btn {
+  /* width: 20%; */
+}
+
+@media (min-width: 600px) {
+  .shorten {
+  }
+
+  .shorten__form {
+    background-image: url(../../images/bg-shorten-desktop.svg);
+    background-color: var(--clr-dark-violet);
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shorten__search,
+  .shorten__btn {
+    height: 40%;
+  }
+
+  .shorten__search {
+    width: 65%;
+  }
+
+  .shorten__btn {
+    width: 20%;
+  }
 }

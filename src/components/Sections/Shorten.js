@@ -3,11 +3,11 @@ import classes from "./Shorten.module.css";
 
 const Shorten = () => {
   return (
-    <section>
+    <section className={classes.shorten}>
       <div className="container center">
-        <form action="" className={classes.shorten}>
-          <input id="search" type="text" />
-          <Button>Shorten It!</Button>
+        <form action="" className={`row ${classes.shorten__form}`}>
+          <input className={classes.shorten__search} type="text" />
+          <Button className={classes.shorten__btn}>Shorten It!</Button>
         </form>
       </div>
     </section>
