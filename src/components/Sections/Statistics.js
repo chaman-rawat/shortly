@@ -8,7 +8,7 @@ const Statistics = () => {
     <section className={classes.stats}>
       <div className="container">
         <h2 className="center">Advanced Statistics</h2>
-        <p className="center">
+        <p className={`center ${classes.stat__desc}`}>
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
