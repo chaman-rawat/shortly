@@ -1,3 +1,11 @@
+.shorten {
+  background: linear-gradient(
+    180deg,
+    transparent 50%,
+    var(--clr-very-light-violet) 50%
+  );
+}
+
 .shorten__form {
   background-image: url(../../images/bg-shorten-mobile.svg);
   background-color: var(--clr-dark-violet);
@@ -20,9 +28,6 @@
   border-radius: 5px;
   border: none;
   padding: 0.75em 1em;
-}
- .shorten__search {
-
 }
 
 @media (min-width: 900px) {
