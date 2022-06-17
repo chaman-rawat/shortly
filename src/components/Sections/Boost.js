@@ -6,7 +6,7 @@ const Boost = () => {
     <section className={classes.boost}>
       <div className="container center">
         <h2 className={classes.boost__title}>Boost your links today</h2>
-        <Button>Get Started</Button>
+        <Button className={classes.boost__btn} >Get Started</Button>
       </div>
     </section>
   );

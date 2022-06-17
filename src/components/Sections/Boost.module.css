@@ -9,3 +9,19 @@
   color: #fff;
   font-size: 1.75rem;
 }
+
+@media (min-width: 900px) {
+  .boost {
+    background-image: url("../../images/bg-boost-desktop.svg");
+    padding-block: 3rem !important;
+  }
+
+  .boost__title {
+    font-size: 2.5rem;
+    margin-block-start: 0;
+  }
+
+  .boost__btn {
+    font-size: 1.5rem;
+  }
+}
