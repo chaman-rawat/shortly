@@ -16,11 +16,7 @@ const Statistics = () => {
           <hr className={classes.stats__box__line} />
           <article className={classes.stats__box}>
             <div className={classes.stats__box__logo}>
-              <img
-
-                src={brandRecognition}
-                alt="Brand recognition"
-              />
+              <img src={brandRecognition} alt="Brand recognition" />
             </div>
             <h3>Brand Recognition</h3>
             <p>
@@ -31,10 +27,7 @@ const Statistics = () => {
           </article>
           <article className={classes.stats__box}>
             <div className={classes.stats__box__logo}>
-              <img
-                src={detailedRecords}
-                alt="Detailed records"
-              />
+              <img src={detailedRecords} alt="Detailed records" />
             </div>
             <h3>Detailed Records</h3>
             <p>
@@ -45,11 +38,7 @@ const Statistics = () => {
           </article>
           <article className={classes.stats__box}>
             <div className={classes.stats__box__logo}>
-              <img
-
-                src={fullyCustomizable}
-                alt="Fully customizable"
-              />
+              <img src={fullyCustomizable} alt="Fully customizable" />
             </div>
             <h3>Fully Customizable</h3>
             <p>
