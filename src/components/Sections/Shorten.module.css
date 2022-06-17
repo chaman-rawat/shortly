@@ -53,5 +53,6 @@
 
   .shorten__btn {
     width: 20%;
+    min-width: fit-content;
   }
 }
