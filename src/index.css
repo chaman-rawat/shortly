@@ -12,13 +12,17 @@
 
   /* Secondary Colors */
   --clr-red: hsl(0, 87%, 67%);
-  --clr-very-light-violet: hsl(257deg 7% 63% / 15%);
+
 
   /* Neutral Colors */
   --clr-gray: hsl(0, 0%, 75%);
   --clr-grayish-violet: hsl(257, 7%, 63%);
   --clr-very-dark-blue: hsl(255, 11%, 22%);
   --clr-very-dark-violet: hsl(260, 8%, 14%);
+
+  /* Additional Colors */
+  --clr-light-cyan:hsl(180deg 66% 75%);
+  --clr-very-light-violet: hsl(257deg 7% 63% / 15%);
 
   /* Body Copy */
   font-size: 16px;
@@ -93,7 +97,7 @@ ul {
   .container {
     margin-inline: auto;
     width: 80%;
-    max-width: 1600px;
+    max-width: 1800px;
   }
 
   .row {
