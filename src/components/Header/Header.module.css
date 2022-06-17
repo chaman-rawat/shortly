@@ -48,6 +48,11 @@
   margin-block: 2rem;
 }
 
+.nav__list li:hover {
+  color: var(--clr-dark-violet);
+  cursor: pointer;
+}
+
 .nav__line {
   width: 90%;
   height: 0.1px;

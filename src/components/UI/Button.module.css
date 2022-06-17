@@ -6,3 +6,9 @@
   border: none;
   padding: 0.75em 2em;
 }
+
+.button:hover {
+  text-shadow: 0 0 2px #fff;
+  background-color: var(--clr-light-cyan);
+  cursor: pointer;
+}
