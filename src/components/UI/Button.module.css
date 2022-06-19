@@ -12,3 +12,10 @@
   background-color: var(--clr-light-cyan);
   cursor: pointer;
 }
+
+@media (min-width: 900px) {
+  *:focus {
+    outline: none;
+    box-shadow: 0 0 0.25rem 0.25rem var(--clr-light-cyan);
+  }
+}
