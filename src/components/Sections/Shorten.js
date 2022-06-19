@@ -36,6 +36,7 @@ const Shorten = () => {
       ++countItems;
     } catch (error) {
       setLinkErrorMessage(error.message);
+      inputRef.current.focus();
     } finally {
       setIsLoading(false);
     }
@@ -47,6 +48,7 @@ const Shorten = () => {
 
     if (enteredLink.length === 0) {
       setLinkErrorMessage("Please add a link");
+      inputRef.current.focus();
       return;
     }
 
