@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://chaman-rawat-shortly.netlify.app/](https://chaman-rawat-shortly.netlify.app/)
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/shortly-url-shortening-api-using-react-9It-tuOhTG)
+- Live Site URL: [chaman-rawat-shortly.netlify.app](https://chaman-rawat-shortly.netlify.app/)
 
 ### Built with
 
