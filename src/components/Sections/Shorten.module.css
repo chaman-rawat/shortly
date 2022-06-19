@@ -68,7 +68,7 @@
   gap: 1rem;
   width: 100%;
   border-radius: 5px;
-  padding: 1rem 1.5rem 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .link__url,
@@ -79,6 +79,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.link__url {
+  border-bottom: 1px solid var(--clr-gray);
+  padding-block-end: 1rem;
 }
 
 .link__shorten {
@@ -194,14 +199,17 @@
 
   .result__list__items {
     justify-content: space-between;
+    padding: 1rem 1.5rem 1rem 2rem;
   }
 
   .link__shorten {
     text-align: right;
+    color: var(--clr-cyan);
   }
 
-  .link__shorten {
-    color: var(--clr-cyan);
+  .link__url {
+    border-bottom: 0;
+    padding-block-end: 0;
   }
 
   .link__btn {

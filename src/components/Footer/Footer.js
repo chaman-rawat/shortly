@@ -37,18 +37,10 @@ const Footer = () => {
           </div>
         </div>
         <div className={`row ${classes.footer__icons}`}>
-          {/* <a href=""> */}
-          <img src={facebook} alt="Facebook" />
-          {/* </a> */}
-          {/* <a href=""> */}
-          <img src={twitter} alt="Twitter" />
-          {/* </a> */}
-          {/* <a href=""> */}
-          <img src={pinterest} alt="Pinterest" />
-          {/* </a> */}
-          {/* <a href=""> */}
-          <img src={instagram} alt="Instagram" />
-          {/* </a> */}
+          <img src={facebook} alt="Facebook" aria-hidden="true" />
+          <img src={twitter} alt="Twitter" aria-hidden="true" />
+          <img src={pinterest} alt="Pinterest" aria-hidden="true" />
+          <img src={instagram} alt="Instagram" aria-hidden="true" />
         </div>
       </div>
     </footer>
