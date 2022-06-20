@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import Button from "../UI/Button";
 import classes from "./Shorten.module.css";
@@ -10,6 +10,19 @@ const Shorten = () => {
   const [linkErrorMessage, setLinkErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef();
+
+  useEffect(() => {
+    const localState = JSON.parse(localStorage.getItem("savedShortenedLinks"));
+    if (countItems === 0 && localState !== null) {
+      setShortenedLinks(localState);
+      countItems = localState.length;
+    } else {
+      localStorage.setItem(
+        "savedShortenedLinks",
+        JSON.stringify(shortenedLinks)
+      );
+    }
+  }, [shortenedLinks]);
 
   const getShortenLink = async (url) => {
     setIsLoading(true);
