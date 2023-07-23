@@ -10,40 +10,46 @@ const Shorten = () => {
   const [linkErrorMessage, setLinkErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef();
-
+  console.log(shortenedLinks);
   useEffect(() => {
     const localState = JSON.parse(localStorage.getItem("savedShortenedLinks"));
-    if (countItems === 0 && localState !== null) {
+    if (localState !== null) {
       setShortenedLinks(localState);
       countItems = localState.length;
-    } else {
-      localStorage.setItem(
-        "savedShortenedLinks",
-        JSON.stringify(shortenedLinks)
-      );
     }
-  }, [shortenedLinks]);
+  }, []);
 
   const getShortenLink = async (url) => {
     setIsLoading(true);
     try {
-      const response = await fetch(
-        `https://api.shrtco.de/v2/shorten?url=${url}`
-      );
+      const response = await fetch("/api", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url }),
+      });
 
       if (!response.ok) {
         throw new Error("Please add a valid link");
       }
 
       const data = await response.json();
+      console.log(data);
 
       const link = {
         id: countItems,
-        fullLink: data.result.original_link,
-        shortenLink: data.result.short_link,
+        fullLink: data.full,
+        shortenLink: data.short,
       };
 
+      localStorage.setItem(
+        "savedShortenedLinks",
+        JSON.stringify([...shortenedLinks, link])
+      );
+
       setShortenedLinks((prev) => [...prev, link]);
+
       setIsLoading(false);
       setLinkErrorMessage("");
       ++countItems;
