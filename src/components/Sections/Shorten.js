@@ -11,6 +11,16 @@ const isValidURL = (url) => {
   return urlPattern.test(url);
 };
 
+const appendHttp = (url) => {
+  const pattern = /^https?:\/\//;
+
+  if (!pattern.test(url)) {
+    url = "http://" + url;
+  }
+
+  return url;
+};
+
 const Shorten = () => {
   const [shortenedLinks, setShortenedLinks] = useState([]);
   const [linkErrorMessage, setLinkErrorMessage] = useState("");
@@ -82,7 +92,7 @@ const Shorten = () => {
       return;
     }
 
-    getShortenLink(enteredLink);
+    getShortenLink(appendHttp(enteredLink));
     inputRef.current.value = "";
   };
 
