@@ -5,12 +5,18 @@ import classes from "./Shorten.module.css";
 
 let countItems = 0;
 
+const isValidURL = (url) => {
+  const urlPattern =
+    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w.-]*)*\/?$/i;
+  return urlPattern.test(url);
+};
+
 const Shorten = () => {
   const [shortenedLinks, setShortenedLinks] = useState([]);
   const [linkErrorMessage, setLinkErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef();
-  console.log(shortenedLinks);
+
   useEffect(() => {
     const localState = JSON.parse(localStorage.getItem("savedShortenedLinks"));
     if (localState !== null) {
@@ -31,11 +37,10 @@ const Shorten = () => {
       });
 
       if (!response.ok) {
-        throw new Error("Please add a valid link");
+        throw new Error("Server Error");
       }
 
       const data = await response.json();
-      console.log(data);
 
       const link = {
         id: countItems,
@@ -67,6 +72,12 @@ const Shorten = () => {
 
     if (enteredLink.length === 0) {
       setLinkErrorMessage("Please add a link");
+      inputRef.current.focus();
+      return;
+    }
+
+    if (isValidURL(enteredLink) === false) {
+      setLinkErrorMessage("Please add a valid link");
       inputRef.current.focus();
       return;
     }
